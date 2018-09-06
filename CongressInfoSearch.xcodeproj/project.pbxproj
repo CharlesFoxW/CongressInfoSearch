@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD63F979CD47E40E8F678232 /* Pods_CongressInfoSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AF47C52C3BD8471C45D1E66 /* Pods_CongressInfoSearch.framework */; };
+		CA031EBE1DDD87410007157E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA031EBD1DDD87410007157E /* AppDelegate.swift */; };
+		CA031EC31DDD87410007157E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA031EC11DDD87410007157E /* Main.storyboard */; };
+		CA031EC51DDD87410007157E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA031EC41DDD87410007157E /* Assets.xcassets */; };
+		CA031EC81DDD87410007157E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA031EC61DDD87410007157E /* LaunchScreen.storyboard */; };
+		CA031ED31DDD87410007157E /* CongressInfoSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA031ED21DDD87410007157E /* CongressInfoSearchTests.swift */; };
+		CA031EDE1DDD87410007157E /* CongressInfoSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA031EDD1DDD87410007157E /* CongressInfoSearchUITests.swift */; };
+		CA2228191DEBFE44007CF5E8 /* DetailsTableViewLinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2228181DEBFE44007CF5E8 /* DetailsTableViewLinkCell.swift */; };
+		CA22281B1DEBFE66007CF5E8 /* DetailsTableViewLinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA22281A1DEBFE66007CF5E8 /* DetailsTableViewLinkCell.xib */; };
+		CA672E7C1DE6A83300F7D3CF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672E7B1DE6A83300F7D3CF /* String.swift */; };
+		CA672E7E1DE6A86A00F7D3CF /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672E7D1DE6A86A00F7D3CF /* UITableViewExtension.swift */; };
+		CA672E821DE6A89F00F7D3CF /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672E811DE6A89F00F7D3CF /* UIImageView.swift */; };
+		CA672E861DE6A8D100F7D3CF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672E851DE6A8D100F7D3CF /* UIView.swift */; };
+		CA672E881DE6A8F200F7D3CF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672E871DE6A8F200F7D3CF /* UIColor.swift */; };
+		CA672E8A1DE6A90700F7D3CF /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672E891DE6A90700F7D3CF /* UIApplication.swift */; };
+		CA672E8D1DE6A93A00F7D3CF /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672E8C1DE6A93A00F7D3CF /* BaseTableViewCell.swift */; };
+		CA672E931DE6AAE400F7D3CF /* ExSlideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA672E921DE6AAE400F7D3CF /* ExSlideMenuController.swift */; };
+		CA672E991DE6CF9E00F7D3CF /* ImageHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA672E981DE6CF9E00F7D3CF /* ImageHeaderView.xib */; };
+		CA71CC6B1DE58C4400DD635D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC6A1DE58C4400DD635D /* SideMenuViewController.swift */; };
+		CA71CC6D1DE58D7B00DD635D /* BillsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC6C1DE58D7B00DD635D /* BillsTabViewController.swift */; };
+		CA71CC6F1DE58DE300DD635D /* CommTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC6E1DE58DE300DD635D /* CommTabViewController.swift */; };
+		CA71CC711DE58E2300DD635D /* FavTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC701DE58E2300DD635D /* FavTabViewController.swift */; };
+		CA71CC731DE5908900DD635D /* ImageHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC721DE5908900DD635D /* ImageHeaderView.swift */; };
+		CA71CC751DE5926E00DD635D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC741DE5926E00DD635D /* AboutViewController.swift */; };
+		CA71CC781DE5977800DD635D /* LegisStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC771DE5977800DD635D /* LegisStateView.swift */; };
+		CA71CC7A1DE5978700DD635D /* LegisHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC791DE5978700DD635D /* LegisHouseView.swift */; };
+		CA71CC7C1DE5979900DD635D /* LegisSenateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC7B1DE5979900DD635D /* LegisSenateView.swift */; };
+		CA84CC051DEA6ECA00220643 /* FavLegisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84CC041DEA6ECA00220643 /* FavLegisView.swift */; };
+		CA84CC071DEA6ED500220643 /* FavBillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84CC061DEA6ED500220643 /* FavBillsView.swift */; };
+		CA84CC091DEA6EE000220643 /* FavCommView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA84CC081DEA6EE000220643 /* FavCommView.swift */; };
+		CAA0784E1DE5897F00BEAB12 /* LegisTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA0784D1DE5897F00BEAB12 /* LegisTabViewController.swift */; };
+		CAAC9B961DE9452A00A86302 /* LegisDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAC9B951DE9452A00A86302 /* LegisDetailsView.swift */; };
+		CAAC9B981DE945D800A86302 /* LegisDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAC9B971DE945D800A86302 /* LegisDetailsView.storyboard */; };
+		CAAC9B9A1DE9501B00A86302 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAC9B991DE9501B00A86302 /* DetailsTableViewCell.swift */; };
+		CAAC9B9C1DE950FA00A86302 /* DetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAAC9B9B1DE950FA00A86302 /* DetailsTableViewCell.xib */; };
+		CAAC9B9E1DE996DE00A86302 /* BillsActiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAC9B9D1DE996DE00A86302 /* BillsActiveView.swift */; };
+		CAAC9BA01DE996E900A86302 /* BillsNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAC9B9F1DE996E900A86302 /* BillsNewView.swift */; };
+		CAAC9BA21DE99AD300A86302 /* BillsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAC9BA11DE99AD300A86302 /* BillsTableViewCell.swift */; };
+		CAC459921DE99B8F004A5744 /* BillsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC459911DE99B8F004A5744 /* BillsTableViewCell.xib */; };
+		CAC459941DE99F5C004A5744 /* BillDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC459931DE99F5C004A5744 /* BillDetailsView.swift */; };
+		CAC459961DE99F6D004A5744 /* BillDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC459951DE99F6D004A5744 /* BillDetailsView.storyboard */; };
+		CAC459981DE9A935004A5744 /* CommHouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC459971DE9A935004A5744 /* CommHouseView.swift */; };
+		CAC4599A1DE9A940004A5744 /* CommSenateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC459991DE9A940004A5744 /* CommSenateView.swift */; };
+		CAC4599C1DE9A951004A5744 /* CommJointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4599B1DE9A951004A5744 /* CommJointView.swift */; };
+		CAC4599E1DE9AC88004A5744 /* CommTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC4599D1DE9AC88004A5744 /* CommTableViewCell.swift */; };
+		CAC459A01DE9AD21004A5744 /* CommTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAC4599F1DE9AD21004A5744 /* CommTableViewCell.xib */; };
+		CAC459A21DE9AF97004A5744 /* CommDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC459A11DE9AF97004A5744 /* CommDetailsView.swift */; };
+		CAC459A41DE9B133004A5744 /* CommDetailsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAC459A31DE9B133004A5744 /* CommDetailsView.storyboard */; };
+		CAFD6C831DE821CC00F8FD48 /* LegisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFD6C821DE821CC00F8FD48 /* LegisTableViewCell.swift */; };
+		CAFD6C851DE8224A00F8FD48 /* LegisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAFD6C841DE8224A00F8FD48 /* LegisTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA031ECF1DDD87410007157E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA031EB21DDD87410007157E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA031EB91DDD87410007157E;
+			remoteInfo = CongressInfoSearch;
+		};
+		CA031EDA1DDD87410007157E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA031EB21DDD87410007157E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA031EB91DDD87410007157E;
+			remoteInfo = CongressInfoSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D58C6B2DCB19156F73789C8 /* Pods-CongressInfoSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CongressInfoSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-CongressInfoSearch/Pods-CongressInfoSearch.release.xcconfig"; sourceTree = "<group>"; };
+		9AF47C52C3BD8471C45D1E66 /* Pods_CongressInfoSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CongressInfoSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA031EBA1DDD87410007157E /* CongressInfoSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CongressInfoSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA031EBD1DDD87410007157E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA031EC21DDD87410007157E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA031EC41DDD87410007157E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA031EC71DDD87410007157E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA031EC91DDD87410007157E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA031ECE1DDD87410007157E /* CongressInfoSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CongressInfoSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA031ED21DDD87410007157E /* CongressInfoSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressInfoSearchTests.swift; sourceTree = "<group>"; };
+		CA031ED41DDD87410007157E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA031ED91DDD87410007157E /* CongressInfoSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CongressInfoSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA031EDD1DDD87410007157E /* CongressInfoSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongressInfoSearchUITests.swift; sourceTree = "<group>"; };
+		CA031EDF1DDD87410007157E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2228181DEBFE44007CF5E8 /* DetailsTableViewLinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewLinkCell.swift; sourceTree = "<group>"; };
+		CA22281A1DEBFE66007CF5E8 /* DetailsTableViewLinkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsTableViewLinkCell.xib; sourceTree = "<group>"; };
+		CA672E7B1DE6A83300F7D3CF /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CA672E7D1DE6A86A00F7D3CF /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		CA672E811DE6A89F00F7D3CF /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		CA672E851DE6A8D100F7D3CF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		CA672E871DE6A8F200F7D3CF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		CA672E891DE6A90700F7D3CF /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		CA672E8C1DE6A93A00F7D3CF /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		CA672E921DE6AAE400F7D3CF /* ExSlideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExSlideMenuController.swift; sourceTree = "<group>"; };
+		CA672E981DE6CF9E00F7D3CF /* ImageHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageHeaderView.xib; sourceTree = "<group>"; };
+		CA71CC6A1DE58C4400DD635D /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		CA71CC6C1DE58D7B00DD635D /* BillsTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillsTabViewController.swift; sourceTree = "<group>"; };
+		CA71CC6E1DE58DE300DD635D /* CommTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommTabViewController.swift; sourceTree = "<group>"; };
+		CA71CC701DE58E2300DD635D /* FavTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavTabViewController.swift; sourceTree = "<group>"; };
+		CA71CC721DE5908900DD635D /* ImageHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageHeaderView.swift; sourceTree = "<group>"; };
+		CA71CC741DE5926E00DD635D /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CA71CC771DE5977800DD635D /* LegisStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegisStateView.swift; sourceTree = "<group>"; };
+		CA71CC791DE5978700DD635D /* LegisHouseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegisHouseView.swift; sourceTree = "<group>"; };
+		CA71CC7B1DE5979900DD635D /* LegisSenateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegisSenateView.swift; sourceTree = "<group>"; };
+		CA84CC041DEA6ECA00220643 /* FavLegisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavLegisView.swift; sourceTree = "<group>"; };
+		CA84CC061DEA6ED500220643 /* FavBillsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavBillsView.swift; sourceTree = "<group>"; };
+		CA84CC081DEA6EE000220643 /* FavCommView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavCommView.swift; sourceTree = "<group>"; };
+		CAA0784D1DE5897F00BEAB12 /* LegisTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegisTabViewController.swift; sourceTree = "<group>"; };
+		CAAC9B951DE9452A00A86302 /* LegisDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegisDetailsView.swift; sourceTree = "<group>"; };
+		CAAC9B971DE945D800A86302 /* LegisDetailsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LegisDetailsView.storyboard; sourceTree = "<group>"; };
+		CAAC9B991DE9501B00A86302 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		CAAC9B9B1DE950FA00A86302 /* DetailsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsTableViewCell.xib; sourceTree = "<group>"; };
+		CAAC9B9D1DE996DE00A86302 /* BillsActiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillsActiveView.swift; sourceTree = "<group>"; };
+		CAAC9B9F1DE996E900A86302 /* BillsNewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillsNewView.swift; sourceTree = "<group>"; };
+		CAAC9BA11DE99AD300A86302 /* BillsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillsTableViewCell.swift; sourceTree = "<group>"; };
+		CAC459911DE99B8F004A5744 /* BillsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BillsTableViewCell.xib; sourceTree = "<group>"; };
+		CAC459931DE99F5C004A5744 /* BillDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillDetailsView.swift; sourceTree = "<group>"; };
+		CAC459951DE99F6D004A5744 /* BillDetailsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BillDetailsView.storyboard; sourceTree = "<group>"; };
+		CAC459971DE9A935004A5744 /* CommHouseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommHouseView.swift; sourceTree = "<group>"; };
+		CAC459991DE9A940004A5744 /* CommSenateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommSenateView.swift; sourceTree = "<group>"; };
+		CAC4599B1DE9A951004A5744 /* CommJointView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommJointView.swift; sourceTree = "<group>"; };
+		CAC4599D1DE9AC88004A5744 /* CommTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommTableViewCell.swift; sourceTree = "<group>"; };
+		CAC4599F1DE9AD21004A5744 /* CommTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommTableViewCell.xib; sourceTree = "<group>"; };
+		CAC459A11DE9AF97004A5744 /* CommDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommDetailsView.swift; sourceTree = "<group>"; };
+		CAC459A31DE9B133004A5744 /* CommDetailsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CommDetailsView.storyboard; sourceTree = "<group>"; };
+		CAFD6C821DE821CC00F8FD48 /* LegisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LegisTableViewCell.swift; sourceTree = "<group>"; };
+		CAFD6C841DE8224A00F8FD48 /* LegisTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LegisTableViewCell.xib; sourceTree = "<group>"; };
+		F1AB428CC207DB53FE642FF9 /* Pods-CongressInfoSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CongressInfoSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CongressInfoSearch/Pods-CongressInfoSearch.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA031EB71DDD87410007157E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD63F979CD47E40E8F678232 /* Pods_CongressInfoSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA031ECB1DDD87410007157E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA031ED61DDD87410007157E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5343ED79CB282A299DAD6A65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AF47C52C3BD8471C45D1E66 /* Pods_CongressInfoSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA031EB11DDD87410007157E = {
+			isa = PBXGroup;
+			children = (
+				CA031EBC1DDD87410007157E /* CongressInfoSearch */,
+				CA031ED11DDD87410007157E /* CongressInfoSearchTests */,
+				CA031EDC1DDD87410007157E /* CongressInfoSearchUITests */,
+				CA031EBB1DDD87410007157E /* Products */,
+				D1410B09D9F2B4E5837E03BE /* Pods */,
+				5343ED79CB282A299DAD6A65 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA031EBB1DDD87410007157E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA031EBA1DDD87410007157E /* CongressInfoSearch.app */,
+				CA031ECE1DDD87410007157E /* CongressInfoSearchTests.xctest */,
+				CA031ED91DDD87410007157E /* CongressInfoSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA031EBC1DDD87410007157E /* CongressInfoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC9B941DE944F800A86302 /* Details View */,
+				CA672E8B1DE6A92100F7D3CF /* Table View Cell */,
+				CA672E7A1DE6A82600F7D3CF /* Extension */,
+				CA71CC761DE5974900DD635D /* View */,
+				CA031EBD1DDD87410007157E /* AppDelegate.swift */,
+				CA031EC11DDD87410007157E /* Main.storyboard */,
+				CA031EC41DDD87410007157E /* Assets.xcassets */,
+				CA031EC61DDD87410007157E /* LaunchScreen.storyboard */,
+				CA031EC91DDD87410007157E /* Info.plist */,
+				CAA0784D1DE5897F00BEAB12 /* LegisTabViewController.swift */,
+				CA71CC6A1DE58C4400DD635D /* SideMenuViewController.swift */,
+				CA71CC6C1DE58D7B00DD635D /* BillsTabViewController.swift */,
+				CA71CC6E1DE58DE300DD635D /* CommTabViewController.swift */,
+				CA71CC701DE58E2300DD635D /* FavTabViewController.swift */,
+				CA71CC741DE5926E00DD635D /* AboutViewController.swift */,
+				CA672E921DE6AAE400F7D3CF /* ExSlideMenuController.swift */,
+			);
+			path = CongressInfoSearch;
+			sourceTree = "<group>";
+		};
+		CA031ED11DDD87410007157E /* CongressInfoSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA031ED21DDD87410007157E /* CongressInfoSearchTests.swift */,
+				CA031ED41DDD87410007157E /* Info.plist */,
+			);
+			path = CongressInfoSearchTests;
+			sourceTree = "<group>";
+		};
+		CA031EDC1DDD87410007157E /* CongressInfoSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA031EDD1DDD87410007157E /* CongressInfoSearchUITests.swift */,
+				CA031EDF1DDD87410007157E /* Info.plist */,
+			);
+			path = CongressInfoSearchUITests;
+			sourceTree = "<group>";
+		};
+		CA672E7A1DE6A82600F7D3CF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CA672E7B1DE6A83300F7D3CF /* String.swift */,
+				CA672E7D1DE6A86A00F7D3CF /* UITableViewExtension.swift */,
+				CA672E811DE6A89F00F7D3CF /* UIImageView.swift */,
+				CA672E851DE6A8D100F7D3CF /* UIView.swift */,
+				CA672E871DE6A8F200F7D3CF /* UIColor.swift */,
+				CA672E891DE6A90700F7D3CF /* UIApplication.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		CA672E8B1DE6A92100F7D3CF /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CA672E8C1DE6A93A00F7D3CF /* BaseTableViewCell.swift */,
+				CAFD6C821DE821CC00F8FD48 /* LegisTableViewCell.swift */,
+				CAFD6C841DE8224A00F8FD48 /* LegisTableViewCell.xib */,
+				CAAC9B991DE9501B00A86302 /* DetailsTableViewCell.swift */,
+				CAAC9B9B1DE950FA00A86302 /* DetailsTableViewCell.xib */,
+				CAAC9BA11DE99AD300A86302 /* BillsTableViewCell.swift */,
+				CAC459911DE99B8F004A5744 /* BillsTableViewCell.xib */,
+				CAC4599D1DE9AC88004A5744 /* CommTableViewCell.swift */,
+				CAC4599F1DE9AD21004A5744 /* CommTableViewCell.xib */,
+				CA2228181DEBFE44007CF5E8 /* DetailsTableViewLinkCell.swift */,
+				CA22281A1DEBFE66007CF5E8 /* DetailsTableViewLinkCell.xib */,
+			);
+			name = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		CA71CC761DE5974900DD635D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA71CC721DE5908900DD635D /* ImageHeaderView.swift */,
+				CA71CC771DE5977800DD635D /* LegisStateView.swift */,
+				CA71CC791DE5978700DD635D /* LegisHouseView.swift */,
+				CA71CC7B1DE5979900DD635D /* LegisSenateView.swift */,
+				CA672E981DE6CF9E00F7D3CF /* ImageHeaderView.xib */,
+				CAAC9B9D1DE996DE00A86302 /* BillsActiveView.swift */,
+				CAAC9B9F1DE996E900A86302 /* BillsNewView.swift */,
+				CAC459971DE9A935004A5744 /* CommHouseView.swift */,
+				CAC459991DE9A940004A5744 /* CommSenateView.swift */,
+				CAC4599B1DE9A951004A5744 /* CommJointView.swift */,
+				CA84CC041DEA6ECA00220643 /* FavLegisView.swift */,
+				CA84CC061DEA6ED500220643 /* FavBillsView.swift */,
+				CA84CC081DEA6EE000220643 /* FavCommView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CAAC9B941DE944F800A86302 /* Details View */ = {
+			isa = PBXGroup;
+			children = (
+				CAAC9B951DE9452A00A86302 /* LegisDetailsView.swift */,
+				CAAC9B971DE945D800A86302 /* LegisDetailsView.storyboard */,
+				CAC459931DE99F5C004A5744 /* BillDetailsView.swift */,
+				CAC459951DE99F6D004A5744 /* BillDetailsView.storyboard */,
+				CAC459A11DE9AF97004A5744 /* CommDetailsView.swift */,
+				CAC459A31DE9B133004A5744 /* CommDetailsView.storyboard */,
+			);
+			name = "Details View";
+			sourceTree = "<group>";
+		};
+		D1410B09D9F2B4E5837E03BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1AB428CC207DB53FE642FF9 /* Pods-CongressInfoSearch.debug.xcconfig */,
+				6D58C6B2DCB19156F73789C8 /* Pods-CongressInfoSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA031EB91DDD87410007157E /* CongressInfoSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA031EE21DDD87410007157E /* Build configuration list for PBXNativeTarget "CongressInfoSearch" */;
+			buildPhases = (
+				E7B3C4E8740F7C831F38BA37 /* [CP] Check Pods Manifest.lock */,
+				CA031EB61DDD87410007157E /* Sources */,
+				CA031EB71DDD87410007157E /* Frameworks */,
+				CA031EB81DDD87410007157E /* Resources */,
+				45133A94E360424FF36BEC7A /* [CP] Embed Pods Frameworks */,
+				51D65657FBDE7B8B26A21EEB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CongressInfoSearch;
+			productName = CongressInfoSearch;
+			productReference = CA031EBA1DDD87410007157E /* CongressInfoSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA031ECD1DDD87410007157E /* CongressInfoSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA031EE51DDD87410007157E /* Build configuration list for PBXNativeTarget "CongressInfoSearchTests" */;
+			buildPhases = (
+				CA031ECA1DDD87410007157E /* Sources */,
+				CA031ECB1DDD87410007157E /* Frameworks */,
+				CA031ECC1DDD87410007157E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA031ED01DDD87410007157E /* PBXTargetDependency */,
+			);
+			name = CongressInfoSearchTests;
+			productName = CongressInfoSearchTests;
+			productReference = CA031ECE1DDD87410007157E /* CongressInfoSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA031ED81DDD87410007157E /* CongressInfoSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA031EE81DDD87410007157E /* Build configuration list for PBXNativeTarget "CongressInfoSearchUITests" */;
+			buildPhases = (
+				CA031ED51DDD87410007157E /* Sources */,
+				CA031ED61DDD87410007157E /* Frameworks */,
+				CA031ED71DDD87410007157E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA031EDB1DDD87410007157E /* PBXTargetDependency */,
+			);
+			name = CongressInfoSearchUITests;
+			productName = CongressInfoSearchUITests;
+			productReference = CA031ED91DDD87410007157E /* CongressInfoSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA031EB21DDD87410007157E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Clarence Wang";
+				TargetAttributes = {
+					CA031EB91DDD87410007157E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = F8FA3CPAAB;
+						ProvisioningStyle = Automatic;
+					};
+					CA031ECD1DDD87410007157E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = F8FA3CPAAB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA031EB91DDD87410007157E;
+					};
+					CA031ED81DDD87410007157E = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = F8FA3CPAAB;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CA031EB91DDD87410007157E;
+					};
+				};
+			};
+			buildConfigurationList = CA031EB51DDD87410007157E /* Build configuration list for PBXProject "CongressInfoSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA031EB11DDD87410007157E;
+			productRefGroup = CA031EBB1DDD87410007157E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA031EB91DDD87410007157E /* CongressInfoSearch */,
+				CA031ECD1DDD87410007157E /* CongressInfoSearchTests */,
+				CA031ED81DDD87410007157E /* CongressInfoSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA031EB81DDD87410007157E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA031EC81DDD87410007157E /* LaunchScreen.storyboard in Resources */,
+				CAFD6C851DE8224A00F8FD48 /* LegisTableViewCell.xib in Resources */,
+				CA031EC51DDD87410007157E /* Assets.xcassets in Resources */,
+				CAC459A41DE9B133004A5744 /* CommDetailsView.storyboard in Resources */,
+				CA031EC31DDD87410007157E /* Main.storyboard in Resources */,
+				CAC459961DE99F6D004A5744 /* BillDetailsView.storyboard in Resources */,
+				CAAC9B9C1DE950FA00A86302 /* DetailsTableViewCell.xib in Resources */,
+				CAC459921DE99B8F004A5744 /* BillsTableViewCell.xib in Resources */,
+				CA22281B1DEBFE66007CF5E8 /* DetailsTableViewLinkCell.xib in Resources */,
+				CAC459A01DE9AD21004A5744 /* CommTableViewCell.xib in Resources */,
+				CA672E991DE6CF9E00F7D3CF /* ImageHeaderView.xib in Resources */,
+				CAAC9B981DE945D800A86302 /* LegisDetailsView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA031ECC1DDD87410007157E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA031ED71DDD87410007157E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45133A94E360424FF36BEC7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CongressInfoSearch/Pods-CongressInfoSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51D65657FBDE7B8B26A21EEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CongressInfoSearch/Pods-CongressInfoSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7B3C4E8740F7C831F38BA37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA031EB61DDD87410007157E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA672E8A1DE6A90700F7D3CF /* UIApplication.swift in Sources */,
+				CA84CC051DEA6ECA00220643 /* FavLegisView.swift in Sources */,
+				CA71CC6F1DE58DE300DD635D /* CommTabViewController.swift in Sources */,
+				CA71CC7A1DE5978700DD635D /* LegisHouseView.swift in Sources */,
+				CA2228191DEBFE44007CF5E8 /* DetailsTableViewLinkCell.swift in Sources */,
+				CAC459A21DE9AF97004A5744 /* CommDetailsView.swift in Sources */,
+				CAC4599E1DE9AC88004A5744 /* CommTableViewCell.swift in Sources */,
+				CAAC9B9A1DE9501B00A86302 /* DetailsTableViewCell.swift in Sources */,
+				CAAC9B961DE9452A00A86302 /* LegisDetailsView.swift in Sources */,
+				CAAC9BA01DE996E900A86302 /* BillsNewView.swift in Sources */,
+				CAC4599C1DE9A951004A5744 /* CommJointView.swift in Sources */,
+				CA71CC6D1DE58D7B00DD635D /* BillsTabViewController.swift in Sources */,
+				CA71CC7C1DE5979900DD635D /* LegisSenateView.swift in Sources */,
+				CAA0784E1DE5897F00BEAB12 /* LegisTabViewController.swift in Sources */,
+				CA84CC071DEA6ED500220643 /* FavBillsView.swift in Sources */,
+				CA672E881DE6A8F200F7D3CF /* UIColor.swift in Sources */,
+				CA71CC781DE5977800DD635D /* LegisStateView.swift in Sources */,
+				CAAC9BA21DE99AD300A86302 /* BillsTableViewCell.swift in Sources */,
+				CA71CC751DE5926E00DD635D /* AboutViewController.swift in Sources */,
+				CA71CC711DE58E2300DD635D /* FavTabViewController.swift in Sources */,
+				CA672E861DE6A8D100F7D3CF /* UIView.swift in Sources */,
+				CA672E7E1DE6A86A00F7D3CF /* UITableViewExtension.swift in Sources */,
+				CA84CC091DEA6EE000220643 /* FavCommView.swift in Sources */,
+				CA672E8D1DE6A93A00F7D3CF /* BaseTableViewCell.swift in Sources */,
+				CAC4599A1DE9A940004A5744 /* CommSenateView.swift in Sources */,
+				CA672E931DE6AAE400F7D3CF /* ExSlideMenuController.swift in Sources */,
+				CA672E821DE6A89F00F7D3CF /* UIImageView.swift in Sources */,
+				CAC459981DE9A935004A5744 /* CommHouseView.swift in Sources */,
+				CA71CC6B1DE58C4400DD635D /* SideMenuViewController.swift in Sources */,
+				CA031EBE1DDD87410007157E /* AppDelegate.swift in Sources */,
+				CA672E7C1DE6A83300F7D3CF /* String.swift in Sources */,
+				CAC459941DE99F5C004A5744 /* BillDetailsView.swift in Sources */,
+				CAFD6C831DE821CC00F8FD48 /* LegisTableViewCell.swift in Sources */,
+				CA71CC731DE5908900DD635D /* ImageHeaderView.swift in Sources */,
+				CAAC9B9E1DE996DE00A86302 /* BillsActiveView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA031ECA1DDD87410007157E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA031ED31DDD87410007157E /* CongressInfoSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA031ED51DDD87410007157E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA031EDE1DDD87410007157E /* CongressInfoSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA031ED01DDD87410007157E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA031EB91DDD87410007157E /* CongressInfoSearch */;
+			targetProxy = CA031ECF1DDD87410007157E /* PBXContainerItemProxy */;
+		};
+		CA031EDB1DDD87410007157E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA031EB91DDD87410007157E /* CongressInfoSearch */;
+			targetProxy = CA031EDA1DDD87410007157E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA031EC11DDD87410007157E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA031EC21DDD87410007157E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA031EC61DDD87410007157E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA031EC71DDD87410007157E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA031EE01DDD87410007157E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA031EE11DDD87410007157E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA031EE31DDD87410007157E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1AB428CC207DB53FE642FF9 /* Pods-CongressInfoSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F8FA3CPAAB;
+				INFOPLIST_FILE = CongressInfoSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.CongressInfoSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CA031EE41DDD87410007157E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D58C6B2DCB19156F73789C8 /* Pods-CongressInfoSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F8FA3CPAAB;
+				INFOPLIST_FILE = CongressInfoSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.CongressInfoSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CA031EE61DDD87410007157E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F8FA3CPAAB;
+				INFOPLIST_FILE = CongressInfoSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.CongressInfoSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CongressInfoSearch.app/CongressInfoSearch";
+			};
+			name = Debug;
+		};
+		CA031EE71DDD87410007157E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F8FA3CPAAB;
+				INFOPLIST_FILE = CongressInfoSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.CongressInfoSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CongressInfoSearch.app/CongressInfoSearch";
+			};
+			name = Release;
+		};
+		CA031EE91DDD87410007157E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = F8FA3CPAAB;
+				INFOPLIST_FILE = CongressInfoSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.CongressInfoSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CongressInfoSearch;
+			};
+			name = Debug;
+		};
+		CA031EEA1DDD87410007157E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = F8FA3CPAAB;
+				INFOPLIST_FILE = CongressInfoSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = USC.CongressInfoSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CongressInfoSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA031EB51DDD87410007157E /* Build configuration list for PBXProject "CongressInfoSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA031EE01DDD87410007157E /* Debug */,
+				CA031EE11DDD87410007157E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA031EE21DDD87410007157E /* Build configuration list for PBXNativeTarget "CongressInfoSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA031EE31DDD87410007157E /* Debug */,
+				CA031EE41DDD87410007157E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA031EE51DDD87410007157E /* Build configuration list for PBXNativeTarget "CongressInfoSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA031EE61DDD87410007157E /* Debug */,
+				CA031EE71DDD87410007157E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA031EE81DDD87410007157E /* Build configuration list for PBXNativeTarget "CongressInfoSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA031EE91DDD87410007157E /* Debug */,
+				CA031EEA1DDD87410007157E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA031EB21DDD87410007157E /* Project object */;
+}

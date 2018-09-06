@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Is-de-6gl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Senate-->
+        <scene sceneID="2AM-MS-vGk">
+            <objects>
+                <viewController storyboardIdentifier="CommSenateView" id="pdw-xV-qxT" customClass="CommSenateView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t4l-ck-IUL"/>
+                        <viewControllerLayoutGuide type="bottom" id="CcO-44-D4Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gHR-2M-Q8E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHw-mX-jew">
+                                <rect key="frame" x="317" y="582" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Zq-Uf-Y1h">
+                                <rect key="frame" x="0.0" y="64" width="375" height="556"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pdw-xV-qxT" id="K69-VD-mu9"/>
+                                    <outlet property="delegate" destination="pdw-xV-qxT" id="Ce8-cU-K7m"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Senate" id="2L9-J5-myb"/>
+                    <connections>
+                        <outlet property="tableView" destination="0Zq-Uf-Y1h" id="bGH-EI-c4i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7O-JN-O58" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979.20000000000005" y="3311.2443778110946"/>
+        </scene>
+        <!--Joint-->
+        <scene sceneID="8yi-8i-mXW">
+            <objects>
+                <viewController storyboardIdentifier="CommJointView" id="9yk-Pb-vqO" customClass="CommJointView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kkq-BK-Iny"/>
+                        <viewControllerLayoutGuide type="bottom" id="QOx-9h-Nmo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cmK-ul-24w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2g4-V0-kru">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9yk-Pb-vqO" id="oJG-6y-MH3"/>
+                                    <outlet property="delegate" destination="9yk-Pb-vqO" id="7Ma-Le-bSS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Joint" id="Qg3-h6-0uQ"/>
+                    <connections>
+                        <outlet property="tableView" destination="2g4-V0-kru" id="Dco-Fh-Y1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgh-AO-ARt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-977.60000000000002" y="3957.1214392803599"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="MO1-yu-ohP">
+            <objects>
+                <viewController storyboardIdentifier="AboutViewController" id="Ggy-w3-in0" customClass="AboutViewController" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="85E-FQ-VDg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qhr-ZL-1IM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uZB-na-U98">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="cHE-Pq-QRV">
+                                <rect key="frame" x="87" y="117" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yihao Wang" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ie-hH-hMB">
+                                <rect key="frame" x="126" y="382" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7892-7152-81" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fa-Wh-JMg">
+                                <rect key="frame" x="132" y="436" width="110" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVy-8e-48x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2682.4000000000001" y="6255.9220389805105"/>
+        </scene>
+        <!--Bills-->
+        <scene sceneID="xUV-Fp-dnZ">
+            <objects>
+                <viewController storyboardIdentifier="FavBillsView" id="0xX-HC-ukg" customClass="FavBillsView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ujO-tZ-EFD"/>
+                        <viewControllerLayoutGuide type="bottom" id="OzW-9C-O0F"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QnH-4A-iQw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-Eo-VxX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="0xX-HC-ukg" id="UEw-dI-iq5"/>
+                                    <outlet property="delegate" destination="0xX-HC-ukg" id="ghH-lI-ksc"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bills" id="YpW-rs-F9C"/>
+                    <connections>
+                        <outlet property="tableView" destination="mdg-Eo-VxX" id="K7W-nF-Ze4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k4J-NP-AEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979.20000000000005" y="5356.8215892053977"/>
+        </scene>
+        <!--Committees-->
+        <scene sceneID="Hgv-4n-2fg">
+            <objects>
+                <viewController storyboardIdentifier="FavCommView" id="Pte-xp-o1Q" customClass="FavCommView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I7x-Qk-umh"/>
+                        <viewControllerLayoutGuide type="bottom" id="svK-4L-e8N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2hp-en-wZK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kIA-y0-IaF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Pte-xp-o1Q" id="064-MH-JvG"/>
+                                    <outlet property="delegate" destination="Pte-xp-o1Q" id="blt-jz-7fe"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Committees" id="4HU-aa-2jY"/>
+                    <connections>
+                        <outlet property="tableView" destination="kIA-y0-IaF" id="gtd-po-uvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foq-QH-eT3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979.20000000000005" y="6031.484257871065"/>
+        </scene>
+        <!--Legislators-->
+        <scene sceneID="zib-gw-Pdm">
+            <objects>
+                <viewController storyboardIdentifier="FavLegisView" id="quJ-2X-iSL" customClass="FavLegisView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yuq-9N-g61"/>
+                        <viewControllerLayoutGuide type="bottom" id="EjT-dB-cgf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vFE-uV-Lsq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZYG-TX-gCi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="quJ-2X-iSL" id="wIa-nQ-WEw"/>
+                                    <outlet property="delegate" destination="quJ-2X-iSL" id="g0a-uX-hod"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Legislators" id="dGl-wB-LrB"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZYG-TX-gCi" id="Bj6-2R-fuU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eYj-vL-1qn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979.20000000000005" y="4698.3508245877065"/>
+        </scene>
+        <!--Fav Tab View Controller-->
+        <scene sceneID="mS4-cH-iBo">
+            <objects>
+                <tabBarController storyboardIdentifier="FavTabViewController" id="9em-gb-gGd" customClass="FavTabViewController" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="600"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="nMJ-Jx-Q6Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="quJ-2X-iSL" kind="relationship" relationship="viewControllers" id="a4d-ei-GAz"/>
+                        <segue destination="0xX-HC-ukg" kind="relationship" relationship="viewControllers" id="YuN-pz-5sp"/>
+                        <segue destination="Pte-xp-o1Q" kind="relationship" relationship="viewControllers" id="jzb-a9-zOv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqa-n0-9uY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2683" y="5357"/>
+        </scene>
+        <!--House-->
+        <scene sceneID="x26-gA-QdA">
+            <objects>
+                <viewController storyboardIdentifier="CommHouseView" id="Q0T-Xg-HaO" customClass="CommHouseView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eVB-eP-e20"/>
+                        <viewControllerLayoutGuide type="bottom" id="A0m-EG-oPl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cJL-2v-XHp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QGc-v0-UUO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Q0T-Xg-HaO" id="hKL-3a-mva"/>
+                                    <outlet property="delegate" destination="Q0T-Xg-HaO" id="ygw-91-AHQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="House" id="QXI-8h-Bku"/>
+                    <connections>
+                        <outlet property="tableView" destination="QGc-v0-UUO" id="1Cl-gn-Xhb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Nq-Mp-oLG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979.20000000000005" y="2645.577211394303"/>
+        </scene>
+        <!--Comm Tab View Controller-->
+        <scene sceneID="hed-h1-JLT">
+            <objects>
+                <tabBarController storyboardIdentifier="CommTabViewController" id="5yR-6q-OFr" customClass="CommTabViewController" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="600"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cUQ-uj-qtt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Q0T-Xg-HaO" kind="relationship" relationship="viewControllers" id="NKI-VD-OKu"/>
+                        <segue destination="pdw-xV-qxT" kind="relationship" relationship="viewControllers" id="dXa-ek-qvt"/>
+                        <segue destination="9yk-Pb-vqO" kind="relationship" relationship="viewControllers" id="Ieq-yk-Ef2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mP1-MA-q1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2683" y="3311"/>
+        </scene>
+        <!--New-->
+        <scene sceneID="u2e-82-LZO">
+            <objects>
+                <viewController storyboardIdentifier="BillsNewView" id="hgL-3w-nus" customClass="BillsNewView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EYX-b4-W9x"/>
+                        <viewControllerLayoutGuide type="bottom" id="4IY-3L-1My"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="US0-hC-mPm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C4v-2F-W05">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hgL-3w-nus" id="5kl-Pv-fKu"/>
+                                    <outlet property="delegate" destination="hgL-3w-nus" id="BWX-Ky-5uD"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="New" id="3bW-GX-XEQ"/>
+                    <navigationItem key="navigationItem" id="kjw-EU-jsg"/>
+                    <connections>
+                        <outlet property="tableView" destination="C4v-2F-W05" id="HP5-Mf-wYC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QYh-ma-vcg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979.20000000000005" y="1974.5127436281862"/>
+        </scene>
+        <!--Active-->
+        <scene sceneID="xmD-Tb-cYd">
+            <objects>
+                <viewController storyboardIdentifier="BillsActiveView" id="Ehf-oE-6SP" customClass="BillsActiveView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qmv-fR-eYq"/>
+                        <viewControllerLayoutGuide type="bottom" id="zZu-ut-Nhr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lnd-bs-Idt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="do3-vX-fh7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ehf-oE-6SP" id="ROd-Tp-J1W"/>
+                                    <outlet property="delegate" destination="Ehf-oE-6SP" id="ttT-LA-luL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Active" id="r1D-G1-b6j"/>
+                    <navigationItem key="navigationItem" id="p4G-HL-yEi"/>
+                    <connections>
+                        <outlet property="tableView" destination="do3-vX-fh7" id="dJf-h4-YTB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QCf-Nr-aT7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979.20000000000005" y="1320.5397301349326"/>
+        </scene>
+        <!--Senate-->
+        <scene sceneID="ZYJ-jA-fUX">
+            <objects>
+                <viewController storyboardIdentifier="LegisSenateView" id="QxI-x6-42K" customClass="LegisSenateView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rdl-Uv-LVv"/>
+                        <viewControllerLayoutGuide type="bottom" id="1QA-9T-Rjn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gjK-Ij-oBh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TR5-Mz-HHG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="QxI-x6-42K" id="C5G-Tw-EHj"/>
+                                    <outlet property="delegate" destination="QxI-x6-42K" id="7aA-Ob-BnX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Senate" id="j3s-UK-h4c"/>
+                    <navigationItem key="navigationItem" id="t3c-Jg-dg3"/>
+                    <connections>
+                        <outlet property="tableView" destination="TR5-Mz-HHG" id="Ebb-4Z-xtY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZMD-4k-t75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979" y="540"/>
+        </scene>
+        <!--Bills Tab View Controller-->
+        <scene sceneID="nnW-SR-r7s">
+            <objects>
+                <tabBarController storyboardIdentifier="BillsTabViewController" id="zAg-5g-rWq" customClass="BillsTabViewController" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="600"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="xUz-SY-c4B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ehf-oE-6SP" kind="relationship" relationship="viewControllers" id="ouU-ID-oMz"/>
+                        <segue destination="hgL-3w-nus" kind="relationship" relationship="viewControllers" id="TW4-AV-A8U"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uxx-c1-4xa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2683" y="1611"/>
+        </scene>
+        <!--State-->
+        <scene sceneID="6XJ-yi-vzH">
+            <objects>
+                <viewController storyboardIdentifier="LegisStateView" id="8qr-tg-Skg" customClass="LegisStateView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TAV-jL-pnJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="aTG-HJ-Cke"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I5L-cN-TA3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UwW-xM-n2p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8qr-tg-Skg" id="ZoD-9y-KkL"/>
+                                    <outlet property="delegate" destination="8qr-tg-Skg" id="GTg-ct-g6x"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="State" id="1Md-3R-Esp"/>
+                    <navigationItem key="navigationItem" id="d37-sc-bLS"/>
+                    <connections>
+                        <outlet property="tableView" destination="UwW-xM-n2p" id="oOw-9C-75v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ve-Jq-Ia1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-980" y="-880.65967016491766"/>
+        </scene>
+        <!--House-->
+        <scene sceneID="rJo-e3-T20">
+            <objects>
+                <viewController storyboardIdentifier="LegisHouseView" id="h8B-L3-gDg" customClass="LegisHouseView" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fWT-FE-Quc"/>
+                        <viewControllerLayoutGuide type="bottom" id="0fM-ST-hHz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E6R-qU-bUp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t0h-lq-CHE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="h8B-L3-gDg" id="oSM-j9-O73"/>
+                                    <outlet property="delegate" destination="h8B-L3-gDg" id="Z5k-iv-pa3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="House" id="GNP-nb-WwH"/>
+                    <navigationItem key="navigationItem" id="i6L-PE-28V"/>
+                    <connections>
+                        <outlet property="tableView" destination="t0h-lq-CHE" id="UJA-8A-o5Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDV-Zl-M3G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979" y="-201"/>
+        </scene>
+        <!--Legis Tab View Controller-->
+        <scene sceneID="txb-xH-TTV">
+            <objects>
+                <tabBarController storyboardIdentifier="LegisTabViewController" id="5Is-de-6gl" customClass="LegisTabViewController" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="600"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KPu-fq-h9v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8qr-tg-Skg" kind="relationship" relationship="viewControllers" id="orQ-VF-dFw"/>
+                        <segue destination="h8B-L3-gDg" kind="relationship" relationship="viewControllers" id="wLO-Ht-RNI"/>
+                        <segue destination="QxI-x6-42K" kind="relationship" relationship="viewControllers" id="Rxz-Xw-bVM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTg-HN-jWa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2683" y="-156"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="NV6-Kb-t9a">
+            <objects>
+                <viewController storyboardIdentifier="SideMenuViewController" id="foN-G8-pI6" customClass="SideMenuViewController" customModule="CongressInfoSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8n8-PK-8k7"/>
+                        <viewControllerLayoutGuide type="bottom" id="lWW-QZ-b71"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.89999997615814209" contentMode="scaleToFill" id="xv8-Kn-k7s">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="mWz-ct-NEr">
+                                <rect key="frame" x="0.0" y="160" width="600" height="440"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="foN-G8-pI6" id="TFm-zj-adw"/>
+                                    <outlet property="delegate" destination="foN-G8-pI6" id="N8x-Iu-rpE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.97254901959999995" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lWW-QZ-b71" firstAttribute="top" secondItem="mWz-ct-NEr" secondAttribute="bottom" id="3Ac-wf-O0K"/>
+                            <constraint firstItem="mWz-ct-NEr" firstAttribute="top" secondItem="xv8-Kn-k7s" secondAttribute="top" constant="160" id="Da9-ey-vgX"/>
+                            <constraint firstAttribute="trailing" secondItem="mWz-ct-NEr" secondAttribute="trailing" id="ctA-yD-oTS"/>
+                            <constraint firstItem="mWz-ct-NEr" firstAttribute="leading" secondItem="xv8-Kn-k7s" secondAttribute="leading" id="jYh-CS-ths"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="tableView" destination="mWz-ct-NEr" id="rAh-bw-nle"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LrT-Sd-17q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2683" y="-879"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Photo" width="1500" height="1500"/>
+    </resources>
+</document>
